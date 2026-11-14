@@ -1,0 +1,4 @@
+huggingface_hub>=1.0.0
+auditkit==1.1.10
+auditkit[openai]==1.1.10
+python-dotenv>=1.2.4
