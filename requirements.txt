@@ -1,4 +1,29 @@
 huggingface_hub>=1.0.0
+python-dotenv>=1.2.4
+
+# Dataset Curation
+curatorkit
+
+# Model Evaluation
 auditkit==1.1.10
 auditkit[openai]==1.1.10
-python-dotenv>=1.2.4
+
+# Model Fine-Tuning
+lora
+transformers
+datasets
+peft
+trl
+accelerate
+bitsandbytes
+
+
+# Supporting Libraries
+torch
+sentencepiece
+protobuf
+pandas
+numpy
+scikit-learn
+Pillow
+opencv-python

@@ -74,6 +74,23 @@ We also evaluated semantic correctness and contextual understanding using the sa
 
 However, average inference latency increased by approximately 84.3%. This highlights the trade-off between extraction quality and inference speed.
 
+## 🛠️ Tools, Technologies & Framework Used
+
+We used three key tools throughout the StructuraAI development workflow:
+
+| Tool | How We Used It |
+|---|---|
+| **CuratorKit** | Dataset preparation and curation for invoice extraction, including organizing training examples. |
+| **AlignTUNE** | Fine-tuning Aya Expanse 8B using QLoRA to adapt the model for structured invoice information extraction. |
+| **AuditKIT** | Evaluating and comparing baseline and fine-tuned model performance using deterministic metrics and LLM-as-a-Judge. |
+
+### Our Workflow
+
+**CuratorKit → LignTUNE → AuditKIT**
+
+1. **CuratorKit:** Prepare and curate the invoice dataset.
+2. **AlignTUNE:** Fine-tune the base model using the curated dataset.
+3. **AuditKIT:** Evaluate the fine-tuned model against the original base model and measure performance improvements.
 
 ## 🔗 Project Resources
 
@@ -82,7 +99,8 @@ However, average inference latency increased by approximately 84.3%. This highli
 | Invoice Dataset | [StructuraAI Dataset](https://huggingface.co/datasets/rakesh-bishnoi29/structuraai-dataset) |
 | Base Model | [CohereLabs/Aya Expanse 8B](https://huggingface.co/CohereLabs/aya-expanse-8b) |
 | Fine-Tuned Model Adapter | [StructuraAI Fine-Tuned Adapter](https://huggingface.co/rakesh-bishnoi29/structuraai-aya-expanse-8b-finetuned-extractor) |
-| Hackathon Submission | [Laxsi Labs Final Submission](Submission/Laxsi-Labs-Submission.pdf) |
+| Project Documantation | [View](Submission/Laxsi-Labs-Submission.pdf) |
+| Hackathon Write-up Submission | [View](https://docs.google.com/document/d/1U9O2YkTmYkZqJyyhxNK4RLWejp_pjw88EUDAhALtqMs/edit?usp=sharing) |
 
 
 
